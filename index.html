@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>UTS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="display: flex; width: 30%;">
+                    <a href="#">
+                        <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/Logo-UTS-1.png" alt="logo">
+                    </a>
+                </li>
+                <ul class="itemsNav">
+                    <li>
+                        <a href="./index.html">Agenda</a>
+                        <div class="animationNav"></div>
+                    </li>
+                    <li>
+                        <a href="./configuraciones.html">Configuraciones</a>
+                        <div class="animationNav"></div>
+                    </li>
+                    <li>
+                        <a href="./simulador.html">Simulador</a>
+                        <div class="animationNav"></div>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <section class="efectOpacity">
+        <div class="formulario efectOpacity">
+            <form id="agregar">
+                <h1 class="title efectOpacity">¡Agregar una nueva nota!</h1>
+                <div class="blockInput">
+                    <label for="texto">Texto</label>
+                    <textarea id="texto" cols="30" rows="10" style="padding: 3%; font-size: 14px;"></textarea>
+                </div>
+                <div class="blockInput">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+                </div>
+                <div class="blockInput">
+                    <label for="selectTeam">Materia</label>
+                    <div>
+                        <select name="team" id="selectTeam">
+                            <option value="1">Elegir...</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <input class="send" type="submit" value="Agregar">
+            </form>
+        </div> 
+            
+        <div class="editar_form">
+            <form>
+                <h1 class="title efectOpacity">Editar Datos!</h1>
+                <div class="blockInput">
+                    <label for="texto2">Texto</label>
+                    <textarea id="texto2" cols="30" rows="10" style="overflow: auto; padding: 3%; font-size: 16px;"></textarea>
+                </div>
+                <div class="blockInput">
+                    <label for="fecha2">Fecha</label>
+                    <input type="date" id="fecha2">
+                </div>
+                <div class="blockInput">
+                    <label for="selectTeam2">Materia</label>
+                    <div>
+                        <select name="team" id="selectTeam2" >
+                            <option value="1">Elegir...</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <input class="send" type="submit" value="Editar">
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <h1 style="margin-top: 100px;" class="title efectOpacity">Lista de notas</h1>
+            <div class="cards"></div>
+        </div>
+
+        <div>
+            <h1 style="margin-top: 100px;" class="title efectOpacity">Filtros</h1>
+            <div style="margin-top: 50px;">
+                <h1 style="color: white; font-size: 40px;"></h1>
+                <div id="teamAsociado"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ventanaEmergente"></div>
+
+    <script src="./js/animaciones.js" defer></script>
+    <script src="./js/ventanaEmergente.js" defer></script>
+    <script type="module" src="./js/mostrar.js"></script>
+    <script type="module" src="./js/agregar.js"></script>
+    <script type="module" src="./js/eliminar.js"></script>
+    <script type="module" src="./js/editar.js"></script>
+    <script type="module" src="./js/filtros.js"></script>
+</body>
+</html>

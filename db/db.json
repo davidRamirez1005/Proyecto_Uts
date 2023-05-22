@@ -1,0 +1,30 @@
+{
+  "reclutas": [
+    {
+      "texto": "Tengo evaluacion el 27 de mayo y la siguiente clase despues de esa es el parcial, tambien el speaking",
+      "fecha": "2023-05-21",
+      "id_Team": "2",
+      "id": 1
+    },
+    {
+      "texto": "Un condensador es un componente eléctrico utilizado en circuitos electrónicos para almacenar y liberar carga eléctrica. Consiste en dos placas conductoras separadas por un material dieléctrico que aísla eléctricamente las placas.\n\nCuando se aplica una diferencia de potencial (voltaje) a través de las placas del condensador, se produce una acumulación de cargas eléctricas en las placas, creando un campo eléctrico entre ellas. Cuanto mayor sea la tensión aplicada o mayor sea la superficie de las placas, mayor será la cantidad de carga que puede almacenar el condensador.",
+      "fecha": "2023-05-21",
+      "id_Team": "1",
+      "id": 2
+    }
+  ],
+  "team": [
+    {
+      "materia": "electronica",
+      "semestre": "5",
+      "corte": "3",
+      "id": 1
+    },
+    {
+      "materia": "ingles",
+      "semestre": "5",
+      "corte": "3",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "plantilla-prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "json-server -w db/db.json -p 4001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
